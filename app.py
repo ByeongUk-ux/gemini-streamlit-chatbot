@@ -9,7 +9,7 @@ st.title("🤖 My Gemini Chatbot")
 
 # 2. Gemini API 연결
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
-MODEL = "gemini-3.8-flash"
+MODEL = "gemini-3.5-flash-lite"
 
 # 3. 대화 기록 초기화
 if "messages" not in st.session_state:
